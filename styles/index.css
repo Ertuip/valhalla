@@ -1,0 +1,63 @@
+/* Lado Direito */
+menu #project {
+  background-color: #cecece;
+  color: #212121;
+}
+
+.welcome-content {
+  position: relative;
+  text-align: center;
+  margin-top: -90px;
+}
+
+.welcome-content > p {
+  margin-bottom: -5px;
+  color: #a3a3a3;
+}
+
+.button-group {
+  margin-top: 70px;
+  display: flex;
+  gap: 50px;
+}
+
+/* Botões */
+.card-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: #222;
+  gap: 5px;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  background: #2a2a2c;
+  border: 2px solid transparent;
+  transition: border-color .2s ease, border-width .2s ease, box-shadow .2s ease;
+}
+
+.icon-box > svg {
+    width: 32px;
+    height: 32px;
+}
+
+.card-btn span {
+  font-size: 0.90em;
+  text-align: center; 
+  color: #DDDDDD;
+}
+
+/* Efeito hover */
+.card-btn .icon-box:hover {
+  border-color: #457ec0;
+  box-shadow: .5px .5px 7px rgba(69, 126, 192, 0.19);
+}

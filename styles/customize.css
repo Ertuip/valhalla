@@ -1,0 +1,24 @@
+menu #project {
+  background-color: #cecece;
+  color: #212121;
+}
+
+#customize {
+    color: black;
+    z-index: 1;
+}
+
+menu, menu a {
+    z-index: 1;
+}
+
+.backAnimate {
+    background-color: #cecece;
+    width: 209px;
+    height: 34.4px;
+    position: absolute;
+    top: 128px;
+    z-index: 0;
+    left: 15px;
+    border-radius: 5px;
+}

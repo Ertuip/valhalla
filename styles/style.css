@@ -1,14 +1,8 @@
 @charset "UTF-8";
 
-:root {
-  --primary-color: "#1F2B3D";
-  --secondary-color: "#25303E";
-  --primary-text-color: "#DDDDDD";
-  --secondary-text-color: "#a3a3a3";
-}
-
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   display: flex;
@@ -78,8 +72,6 @@ menu a {
   position: relative;
   background-color: #1d1d1d;
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #dddddd;
   overflow: hidden;
 }

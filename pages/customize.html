@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>IDE Fictícia</title>
-  <link rel="stylesheet" href="../styles/customize.css">
   <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/customize.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,8 +23,55 @@
       </menu>
     </div>
      <div class="right-side">
-
+        <h2>Temas</h2>
+        <div class="themes">
+          <menu>
+            <div class="dark icons">
+              <svg width="90" height="70" xlmns="http://www.w3.org/2000/svg" >
+                <rect width="70" height="50" fill="#2a2a2c" rx="7"/>
+                <rect width="70" height="50" fill="#2a2a2c" rx="7" x="20" y="20"/>
+              </svg>
+              <p>Escuro</p>
+            </div>
+            <div class="light icons">
+              <svg width="90" height="70" xlmns="http://www.w3.org/2000/svg" >
+                <rect width="70" height="50" fill="white" rx="7"/>
+                <rect width="70" height="50" fill="white" rx="7" x="20" y="20"/>
+              </svg>
+              <p>Claro</p>
+            </div>
+            <div class="mixed icons">
+              <svg width="90" height="70" xlmns="http://www.w3.org/2000/svg" >
+                <rect width="70" height="50" fill="#2a2a2c" rx="7"/>
+                <rect width="70" height="50" fill="white" rx="7" x="20" y="20"/>
+              </svg>
+              <p>Misto</p>
+            </div>
+          </menu>
+        </div>
+        <h2>Idioma</h2>
+        <div class="language">
+          <select name="lang" id="lang">
+            <option value="portuguese">Português</option>
+            <option value="english">Inglês</option>
+            <option value="spanish">Espanhol</option>
+          </select>
+          <p><span class="info-icon">&#x24D8;</span> Necessário reiniciar</p>
+        </div>
+        <h2 id="mapa">Mapa de Atalhos</h2>
+        <div class="keymap">
+          <select name="keymap" id="keymap">
+            <option value="win">Windows</option>
+            <option value="mac">Mac OS</option>
+            <option value="linux">Linux</option>
+          </select>
+        </div>
+        <a href="#" id="importConfig">Importar configurações</a>
+        <input type="file" id="import" style="display: none;">
+        <a href="#" id="config">Configurar atalhos</a>
      </div>
   </div>
+  
+  <script src="../js/send-config.js"></script>
 </body>
 </html>

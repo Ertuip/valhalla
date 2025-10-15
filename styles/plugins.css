@@ -1,0 +1,47 @@
+/* Lado Direito */
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* Ativar/Desativar Plugins */
+
+.actived-plugins {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a2c;
+    margin: 20px 25px 0 25px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 7px;
+}
+
+.actived-plugins > p {
+    margin: 0 20px 0 0;
+}
+
+.plugins-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.plugins-div > .plugin {
+    display: flex;
+    flex-direction: column;
+}
+
+.plugins-div > .plugin> .imgh2 {
+    display: flex;
+    font-weight: lighter;
+}
+
+.plugins-div > .plugin > .imgh2 > img {
+    width: 80px;
+    height: 80px;
+}
+

@@ -1,7 +1,10 @@
 {
-    "primary-color": "#1E1E26",
-    "secondary-color": "#1b1b25",
+    "primary-color": "#2a2a2c",
+    "secondary-color": "#1d1d1d",
     "primary-text-color": "#dddddd",
-    "secondary-text-color": "#hhhhhh"
-
+    "secondary-text-color": "#a3a3a3",
+    
+    "border-white-theme": "#cecece",
+    "border-black-theme": "#292929",
+    "activation-color": "#3c3c3c"
 }

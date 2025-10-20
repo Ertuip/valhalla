@@ -13,8 +13,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: #2a2a2c;
-    margin: 20px 25px 0 25px;
-    padding: 10px 25px 10px 25px;
+    margin: 20px 25px 30px 25px;
+    padding: 15px 25px 15px 25px;
     border-radius: 7px;
 }
 
@@ -33,15 +33,30 @@
 .plugins-div > .plugin {
     display: flex;
     flex-direction: column;
+    background-color: #2a2a2c;
+    width: 90%;
+    border-radius: 7px;
+    margin: 0 0 15px 0;
 }
 
-.plugins-div > .plugin> .imgh2 {
+.plugins-div > .plugin > p {
+    margin: 0 20px 20px 20px;
+}
+
+.plugins-div > .plugin > .imgh2 {
     display: flex;
+    align-items: center;
+    margin: 20px 0 10px 20px;
+    gap: 15px;
+}
+
+.plugins-div > .plugin > .imgh2 > h2 {
     font-weight: lighter;
 }
 
 .plugins-div > .plugin > .imgh2 > img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+
 }
 

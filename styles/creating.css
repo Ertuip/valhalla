@@ -9,10 +9,15 @@
     margin: 0;
 }
 
-.content {
-    background-color: #1d1d1d;
-    height: 100vh;
+body {
     color: white;
+    background-color: #1d1d1d;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100%;
+    transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out;
 }
 
 .top-side {
@@ -28,24 +33,112 @@
     margin: 0 12px 0 15px;
 }
 
+.lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
 .line {
-    background-color: white;
-    height: 1px;
+    background-color: rgba(255, 255, 255, 0.671);
+    height: 3px;
     border-radius: 5px;
-    width: 100%;
+    margin: 0 auto;
+    width: 99.5%;
+}
+
+.project-lang-side {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: center;
+    margin: 25px 10px 0 10px;
 }
 
 .project-lang-side > .lang {
+    display: flex;
+    flex-direction: column;
     background-color: #2a2a2c;
-    border-radius: 10px;
     width: 95%;
+    border-radius: 7px;
+    margin: 0 0 15px 0;
+    transition-duration: .2s;
+    cursor: pointer;
 }
 
-.project-lang-side > .lang > h1 {
-    display: inline-block;
+.project-lang-side > .lang.hover {
+    background-color: #3c3c3cc0;
 }
 
-.project-lang-side > .lang > img {
-    width: 80px;
-    height: 80px;
+.project-lang-side > .lang.selected {
+    background-color: #3c3c3cc0 !important;
+    cursor: default;
+}
+
+.project-lang-side > .lang > .imgh1 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 10px 20px;
+    gap: 15px;
+}
+
+.project-lang-side > .lang > .imgh1 > img {
+    width: 50px;
+    height: 50px;
+}
+
+.project-lang-side > .lang > .imgh1 > #java {
+    width: 50px;
+    height: 65px;
+}
+
+.project-lang-side > .lang > .imgh1 > #lua {
+    width: 50px;
+    height: 50px;
+}
+
+.project-lang-side > .lang > .imgh1 > h2 {
+    font-weight: lighter;
+}
+
+.project-lang-side > .lang > p {
+    margin: 0 20px 20px 20px;
+}
+
+.bottom-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    background-color: #222;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.475);
+    width: 100%;
+    height: 60px;
+}
+
+.bottom-side > button {
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin: 0 20px 0 0;
+    padding: 8px 30px;
+    border-radius: 5px;
+    outline: none;
+    background-color:#2a2a2c;
+    color: white;
+    font-size: 16px;
+    transition-duration: .2s;
+}
+
+.bottom-side > button.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.bottom-side > button:not(.disabled):hover {
+    border-color: #457ec0;
+    box-shadow: .5px .5px 8px rgba(69, 126, 192, 0.19);
 }

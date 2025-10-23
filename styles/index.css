@@ -1,11 +1,13 @@
 /* Lado Direito */
+.bar {
+  top: 84px;
+}
 
 .right-side {
   justify-content: center;
   align-items: center;
 }
 menu #project {
-  background-color: #cecece;
   color: #212121;
 }
 

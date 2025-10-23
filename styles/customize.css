@@ -1,31 +1,10 @@
-/* Lado Esquerdo */
-
-menu #project {
-    background-color: #cecece;
-    color: #212121;
-}
-
-#customize {
-    color: black;
-    z-index: 1;
-}
-
-menu, menu a {
-    z-index: 1;
-}
-
-.backAnimate {
-    background-color: #cecece;
-    width: 209px;
-    height: 34.4px;
-    position: absolute;
-    top: 128px;
-    z-index: 0;
-    left: 15px;
-    border-radius: 5px;
-}
-
 /* Lado Direito */
+.bar {
+  top: 123px;
+}
+#customize {
+  color: #212121;
+}
 
  /* Filtro dos svgs */
  svg > rect {
@@ -59,10 +38,28 @@ menu, menu a {
     border-top: 1px solid #292929;
     border-bottom: 1px solid #292929;
     padding: 15px 35px 0 35px;
+    transition-duration: .3s;
  }
  
  .right-side > .themes > menu > .icons:hover {
     cursor: pointer;
+    transition-duration: .3s;
+    scale: 1.04;
+    z-index: 999;
+ }
+ 
+ .right-side > .themes > menu > .icons.selected {
+    animation: pop .3s;
+    scale: 1;
+ }
+
+ @keyframes pop {
+    0% {
+      scale: 1.04;
+    }
+    100% {
+      scale: 1;
+    }
  }
 
  .right-side > .themes > menu > .icons > p {
@@ -70,13 +67,17 @@ menu, menu a {
     margin: 10px 0 10px 0;
  }
 
- .right-side > .themes > menu > .dark {
-    background-color: #3c3c3c;
- }
-
  .right-side > .themes > menu > .icons:first-child {
     border: 1px solid #292929;
     border-radius: 4px 0 0 4px ;
+ }
+
+ .right-side > .themes > menu > .icons:nth-child(2) {
+    border: 1px solid transparent;
+ }
+
+ .right-side > .themes > menu > .icons:nth-child(2):hover {
+    border: 1px solid #292929;
  }
 
  .right-side > .themes > menu > .icons:last-child {
@@ -85,11 +86,6 @@ menu, menu a {
  }
 
  /* Idioma */
- .right-side > .language > p > .info-icon {
-    font-size: 18px;
-    color: #a3a3a3; 
-    vertical-align: middle;
- } 
  .right-side > .language > p {
     color: #a3a3a3;
     position: relative;

@@ -11,6 +11,9 @@ createButton.disabled = true;
 createButton.classList.add('disabled');
 
 langs.forEach(lang => {
+    lang.addEventListener('dblclick', () => {
+        transitionAn("../index.html", "slide-right")
+    })
     lang.addEventListener('click', () => {
         langs.forEach(l => l.classList.remove('selected'));
         lang.classList.add('selected');
@@ -27,8 +30,9 @@ createButton.addEventListener('click', () => {
     const name = selectedLang.querySelector('.imgh1 h1')?.textContent.trim();
     localStorage.setItem('selectedLang', JSON.stringify({ language: name }));
 
+    transitionAn("../index.html", "oppacity")
 });
 
 backArrow.addEventListener('click', () => {
-    transitionAn("../index.html", "slide-left")
+    transitionAn("../index.html", "oppacity1")
 });

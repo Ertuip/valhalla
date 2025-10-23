@@ -40,16 +40,27 @@ body {
   font-weight: 500;
 }
 
+.bar {
+  position: absolute;
+  left: 20px;
+  background-color: #cecece;
+  width: 210px;
+  border-radius: 5px;
+  height: 34.4px;
+  transition-duration: .3s;
+}
+
 menu {
   outline: none;
   color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 10px;
+  grid-row-gap: 5px;
   justify-self: left;
   list-style: none;
   width: 100%;
+  z-index: 1;
 }
 
 menu a {
@@ -59,11 +70,17 @@ menu a {
   padding: 10px;
   padding-bottom: 8px;
   padding-top: 8px;
-  margin-left: -25px;
+  margin-left: -20px;
   font-size: 15px;
   font-weight: 400;
   color: #dddddd;
   border-radius: 5px;
+  transition-duration: .3s;
+  z-index: 1;
+}
+
+menu a:hover {
+  scale: 1.04;
 }
 
 .right-side {

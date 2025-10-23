@@ -5,11 +5,11 @@
   <title>IDE Fictícia</title>
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/customize.css">
+  <link rel="stylesheet" href="../styles/animation.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-  <div class="backAnimate"></div>
     <!-- Lado Esquerdo -->
     <div class="left-side">
       <div class="logo">
@@ -21,26 +21,27 @@
             <a href="customize.html" id="customize">Customizar</a>
             <a href="plugins.html" id="plugin">Plugins</a>
       </menu>
+      <div class="bar"></div>
     </div>
      <div class="right-side">
         <h2>Temas</h2>
         <div class="themes">
           <menu>
-            <div class="dark icons">
+            <div class="dark icons" data-theme="dark">
               <svg width="90" height="70" xlmns="http://www.w3.org/2000/svg" >
                 <rect width="70" height="50" fill="#2a2a2c" rx="7"/>
                 <rect width="70" height="50" fill="#2a2a2c" rx="7" x="20" y="20"/>
               </svg>
               <p>Escuro</p>
             </div>
-            <div class="light icons">
+            <div class="light icons" data-theme="light">
               <svg width="90" height="70" xlmns="http://www.w3.org/2000/svg" >
                 <rect width="70" height="50" fill="white" rx="7"/>
                 <rect width="70" height="50" fill="white" rx="7" x="20" y="20"/>
               </svg>
               <p>Claro</p>
             </div>
-            <div class="mixed icons">
+            <div class="mixed icons" data-theme="mixed">
               <svg width="90" height="70" xlmns="http://www.w3.org/2000/svg" >
                 <rect width="70" height="50" fill="#2a2a2c" rx="7"/>
                 <rect width="70" height="50" fill="white" rx="7" x="20" y="20"/>
@@ -56,7 +57,7 @@
             <option value="english">Inglês</option>
             <option value="spanish">Espanhol</option>
           </select>
-          <p><span class="info-icon">&#x24D8;</span> Necessário reiniciar</p>
+          <p>Necessário reiniciar</p>
         </div>
         <h2 id="mapa">Mapa de Atalhos</h2>
         <div class="keymap">
@@ -71,7 +72,8 @@
         <a href="#" id="config">Configurar atalhos</a>
      </div>
   </div>
-  
+  <script src="../js/customize.js"></script>
+  <script src="../js/animate.js"></script>
   <script src="../js/send-config.js"></script>
 </body>
 </html>

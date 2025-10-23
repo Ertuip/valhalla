@@ -8,7 +8,7 @@ iconBox.forEach(box => {
   svg.style.transition = "fill 0.2s ease";
 
   box.addEventListener("mouseenter", () => {
-    svg.setAttribute("fill", "#457ec0");
+    svg.setAttribute("fill", "#5091dc");
   });
 
   box.addEventListener("mouseleave", () => {

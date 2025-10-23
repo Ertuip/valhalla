@@ -1,4 +1,12 @@
 /* Lado Direito */
+.bar {
+    top: 162px;
+    background-color: #cecece;
+}
+
+menu #plugin {
+    color: #212121;
+}
 
 .right-side {
     display: flex;
@@ -16,10 +24,20 @@
     margin: 20px 25px 30px 25px;
     padding: 15px 25px 15px 25px;
     border-radius: 7px;
+    transition-duration: .2s;
 }
 
 .actived-plugins > p {
     margin: 0 20px 0 0;
+}
+
+.activeds {
+    display: flex;
+    align-items: center;
+    transition-duration: .2s;
+    background-color: #2a2a2c;
+    margin: 20px 25px 30px 25px;
+    padding: 15px 25px 15px 25px;
 }
 
 .plugins-div {
@@ -30,31 +48,84 @@
     row-gap: 10px;
 }
 
+.plugins {
+    overflow-y: hidden;
+}
+
 .plugins-div > .plugin {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #2a2a2c;
+    overflow-y: hidden;
     width: 90%;
     border-radius: 7px;
+    align-items: center;
     margin: 0 0 15px 0;
 }
 
-.plugins-div > .plugin > p {
+.plugins-div > .activeds {
+    display: flex;
+    align-items: center;
+
+}
+
+.plugins-div > .activeds > img {
+    width: 60px;
+    height: 60px;
+}
+
+.plugins-div > .plugin > .verticalbar {
+    height: 160px;
+    width: 2px;
+    background-color: #cececea5;
+    margin: 0 0px 0 0;
+}
+
+
+.plugins-div > .plugin button {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    background-color: #2b2b2b;
+    border-radius: 5px;
+    margin: 0 20px 0 20px;
+    outline: none;
+    border: 2px solid transparent;
+    box-shadow: .2px .2px 4px rgba(0, 0, 0, 0.400);
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.plugins-div > .plugin button:hover {
+    border-color: #457ec0;
+}
+
+.plugins-div > .plugin > button > svg {
+    width: 30px;
+    padding: 0 5px;
+    height: 30px;
+}
+
+.plugins-div > .plugin > button > svg > g {
+    transition-duration: .2s;
+}
+
+.plugins-div > .plugin > .plugin-content > p {
     margin: 0 20px 20px 20px;
 }
 
-.plugins-div > .plugin > .imgh2 {
+.plugins-div > .plugin > .plugin-content > .imgh2 {
     display: flex;
     align-items: center;
     margin: 20px 0 10px 20px;
     gap: 15px;
 }
 
-.plugins-div > .plugin > .imgh2 > h2 {
+.plugins-div > .plugin > .plugin-content > .imgh2 > h2 {
     font-weight: lighter;
 }
 
-.plugins-div > .plugin > .imgh2 > img {
+.plugins-div > .plugin > .plugin-content > .imgh2 > img {
     width: 60px;
     height: 60px;
 

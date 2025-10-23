@@ -1,9 +1,16 @@
 export function transitionAn(targetPage, direction) {
-    const anima = document.querySelector('.anima');
-    if (!anima) return;
-    anima.classList.add(direction);
+    const animaElements = document.getElementsByClassName("anima");
+    if (!animaElements.length) return;
 
-    anima.addEventListener('transitionend', () => {
-        window.location.href = targetPage;
-    }, { once: true });
+    let transitionHandled = false;
+
+    for (const el of animaElements) {
+        el.classList.add(direction);
+        el.addEventListener('animationend', () => {
+            if (!transitionHandled) {
+                transitionHandled = true;
+                window.location.href = targetPage;
+            }
+        }, { once: true });
+    }
 }

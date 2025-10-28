@@ -24,20 +24,14 @@ menu #plugin {
     margin: 20px 25px 30px 25px;
     padding: 15px 25px 15px 25px;
     border-radius: 7px;
-    transition-duration: .2s;
+}
+
+.actived-plugins > span {
+    display: none;
 }
 
 .actived-plugins > p {
     margin: 0 20px 0 0;
-}
-
-.activeds {
-    display: flex;
-    align-items: center;
-    transition-duration: .2s;
-    background-color: #2a2a2c;
-    margin: 20px 25px 30px 25px;
-    padding: 15px 25px 15px 25px;
 }
 
 .plugins-div {
@@ -63,51 +57,12 @@ menu #plugin {
     margin: 0 0 15px 0;
 }
 
-.plugins-div > .activeds {
-    display: flex;
-    align-items: center;
-
-}
-
 .plugins-div > .activeds > img {
     width: 60px;
     height: 60px;
 }
-
-.plugins-div > .plugin > .verticalbar {
-    height: 160px;
-    width: 2px;
-    background-color: #cececea5;
-    margin: 0 0px 0 0;
-}
-
-
-.plugins-div > .plugin button {
-    display: flex;
-    align-items: center;
-    height: 55px;
-    background-color: #2b2b2b;
-    border-radius: 5px;
-    margin: 0 20px 0 20px;
-    outline: none;
-    border: 2px solid transparent;
-    box-shadow: .2px .2px 4px rgba(0, 0, 0, 0.400);
-    transition-duration: .2s;
-    cursor: pointer;
-}
-
-.plugins-div > .plugin button:hover {
-    border-color: #457ec0;
-}
-
-.plugins-div > .plugin > button > svg {
-    width: 30px;
-    padding: 0 5px;
-    height: 30px;
-}
-
-.plugins-div > .plugin > button > svg > g {
-    transition-duration: .2s;
+.plugins-div > .plugin > .plugin-content  {
+    width: 450px;
 }
 
 .plugins-div > .plugin > .plugin-content > p {
@@ -128,6 +83,13 @@ menu #plugin {
 .plugins-div > .plugin > .plugin-content > .imgh2 > img {
     width: 60px;
     height: 60px;
-
 }
 
+.checkbox {
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    height: 51px;
+    width: 56px;
+    border-radius: 6px;
+    margin: 0 20px;
+}

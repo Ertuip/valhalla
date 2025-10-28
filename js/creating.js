@@ -30,9 +30,9 @@ createButton.addEventListener('click', () => {
     const name = selectedLang.querySelector('.imgh1 h1')?.textContent.trim();
     localStorage.setItem('selectedLang', JSON.stringify({ language: name }));
 
-    transitionAn("../index.html", "oppacity")
+    transitionAn("structure.html", "oppacity1")
 });
 
 backArrow.addEventListener('click', () => {
-    transitionAn("../index.html", "oppacity1")
+    transitionAn("structure.html", "oppacity1")
 });

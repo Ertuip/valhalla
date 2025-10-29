@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/creating.css">
     <link rel="stylesheet" href="../styles/animation.css">
-    <title>a</title>
+    <link rel="stylesheet" href="../styles/standard.css">
+    <link rel="stylesheet" href="../styles/scrollbar.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="container">
@@ -23,28 +24,32 @@
             </g>
             </svg>
 
-            <h1>Criar projeto</h1>
+            <h1>Linguagem do Projeto</h1>
         </div>
-        <div class="project-lang-side anima">
-            <div class="lang">
-                <div class="imgh1">
-                    <img src="../assets/python.png" alt="">
-                    <h1>Python</h1>
-                </div>
-                <p>Crie aplicativos em python com as bibliotecas básicas e, caso tenha sido adicionado a extensão de python, bibliotecas avançadas como PyTorch</p>
+        <div class="project-type anima">
+            <div class="option left">
+                <img src="../assets/python.png">
+                <h1>Python</h1>
             </div>
-            <div class="lang">
-                <div class="imgh1">
-                    <img src="../assets/Java.png" id="java">
-                    <h1>Java</h1>
-                </div>
-                <p>Crie projetos de análise de dados ou aplicativos com JavaFX ou JavaSwing com acesso a banco de dados</p>
+            <div class="option">
+                <img src="../assets/Java.png">
+                <h1>Java</h1>
+                <p style="color: #a3a3a3;">Obrigatório ter JDK instalado</p>
+            </div>
+            <div class="option left">
+                <img src="../assets/React-icon.svg.png">
+                <h1>React Native</h1>
+                <p style="color: #a3a3a3;">Obrigatório ter NodeJS intalado</p>
+            </div>
+            <div class="option">
+                <img src="../assets/lua.png">
+                <h1>Lua</h1>
             </div>
         </div>
         <div class="bottom-side anima">
-            <button>Criar</button>
+            <button>Criar Projeto</button>
         </div>
+        <script type="module" src="../js/mobile.js"></script>
     </div>
-    <script type="module" src="../js/creating.js"></script>
 </body>
 </html>

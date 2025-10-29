@@ -30,7 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const projectName = selectedProject.querySelector('h1')?.textContent.trim();
         localStorage.setItem('selectedProject', JSON.stringify({ project: projectName }));
+        const redirectMap = {
+            "Web": "web.html",
+            "PC": "pc.html",
+            "Mobile": "mobile.html",
+            "Personalizado": "creating.html"
+        };
 
-        transitionAn("creating.html", "oppacity1");
+        const targetPage = redirectMap[projectName] || "creating.html";
+
+        transitionAn(targetPage, "oppacity1");
     });
 });

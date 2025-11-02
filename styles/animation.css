@@ -9,15 +9,15 @@
     opacity: 0;
 }
 
-#project:hover {
+.dark-theme #project:hover {
   color: #212121;
 }
 
-#customize:hover {
+.dark-theme #customize:hover {
   color: #212121;
 }
 
-#plugin:hover {
+.dark-theme #plugin:hover {
   color: #212121;
 }
 

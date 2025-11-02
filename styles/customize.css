@@ -175,27 +175,16 @@
   .right-side > a:focus {
     color: #457ec0;
   }
-  body.dark-theme {
-  background-color: #1d1d1d;
-  color: #ffffff;
-}
-
-body.dark-theme .left-side {
-  background-color: #212121;
-}
-
-body.dark-theme .bar {
-  background-color: #cecece;
-}
-
-body.dark-theme menu a {
-  color: #ffffff;
-}
 
 /* Tema claro */
 body.light-theme {
-  background-color: #f1f1f1;
+  background: linear-gradient(135deg, #1d1d1d 50%, #f1f1f1 50%);
   color: #212121;
+}
+
+body.light-theme .left-side {
+  background-color: #e3e3e3;
+  color: #2a2a2c;
 }
 
 body.light-theme .left-side {
@@ -205,6 +194,11 @@ body.light-theme .left-side {
 
 body.light-theme .bar {
   background-color: #a8a8a8;
+}
+
+body.light-theme .right-side {
+  background-color: rgba(255,255,255,0.85);
+  color: #212121;
 }
 
 body.light-theme menu a {
@@ -222,6 +216,11 @@ body.mixed-theme {
   color: #212121;
 }
 
+body.mixed-theme .right-side > .themes > menu > .icons {
+  background-color: #ffffff;
+  color: white;
+}
+
 body.mixed-theme .left-side {
   background-color: #212121;
 }
@@ -229,17 +228,4 @@ body.mixed-theme .left-side {
 body.mixed-theme .right-side {
   background-color: rgba(255,255,255,0.85);
   color: #212121;
-}
-
-body.mixed-theme menu a {
-  color: #212121;
-}
-
-body.mixed-theme .bar {
-  background-color: #9c9c9c;
-}
-
-/* Efeitos suaves na transição */
-body {
-  transition: background-color 0.4s, color 0.4s;
 }

@@ -92,10 +92,10 @@ menu #plugin {
     background-color: #333333;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
     height: 49px;
-    width: 55px;
+    width: 52px;
     border-radius: 6px;
     border: 2px solid transparent;
-    margin: 0 30px 0 20px;
+    margin: 0 20px 0 130px;
     cursor: pointer;
     transition-duration: .2s;
 }

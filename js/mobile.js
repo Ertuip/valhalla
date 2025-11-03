@@ -45,6 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const projectName = selectedProject.querySelector('h1')?.textContent.trim();
         localStorage.setItem('selectedProject', JSON.stringify({ project: projectName }));
 
-        transitionAn("creating.html", "oppacity1");
+        const { exec } = require('child_process');
+
+        exec("code", (error) => {
+            if (error) console.error(error);
+            window.close();
+        });
     });
 });

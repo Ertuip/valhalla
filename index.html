@@ -58,7 +58,7 @@
             <span>Criar Projeto</span>
           </div>
 
-          <div class="card-btn">
+          <div class="card-btn" id="abrirProjeto">
             <div class="icon-box">
               <!--SVG de arquivos-->
               <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,6 @@
             </div>
             <span>Abrir Projeto</span>
           </div>
-
           <div class="card-btn">
             <div class="icon-box">
               <!--SVG de importar (precisa alterar ainda)-->
@@ -113,10 +112,52 @@
           </div>
         </div>
       </div>
+        <input type="file" id="folderInput" webkitdirectory directory style="display:none;">
     </div>
   </div>
   <script src="js/svg.js"></script>
   <script src="js/animate.js"></script>
   <script type="module" src="js/index.js"></script>
+  <script>
+  const { execFile } = require('child_process');
+  const path = require('path');
+  const os = require('os');
+
+  const abrirProjeto = document.getElementById('abrirProjeto');
+  const folderInput = document.getElementById('folderInput');
+
+  abrirProjeto.addEventListener('click', () => {
+    folderInput.click();
+  });
+
+  folderInput.addEventListener('change', (event) => {
+    const files = event.target.files;
+
+    if (files.length > 0) {
+      // Caminho da pasta selecionada
+      const folderPath = path.dirname(files[0].path);
+      console.log('Pasta selecionada:', folderPath);
+
+      // Caminho do aplicativo que você quer abrir
+      // Exemplo: abrir o VSCode ou outro executável
+      const appPath = "C:\\Program Files\\SomeApp\\SomeApp.exe"; // Windows
+      // const appPath = "/Applications/SomeApp.app/Contents/MacOS/SomeApp"; // Mac
+      // const appPath = "/usr/bin/someapp"; // Linux
+
+      // Executa o aplicativo
+      execFile("code", [folderPath], (err) => {
+        if (err) {
+          console.error('Erro ao abrir o aplicativo:', err);
+          return;
+        }
+        console.log('Aplicativo aberto com sucesso!');
+      });
+
+      // Fecha a janela do Electron
+      window.close();
+    }
+  });
+</script>
+
 </body>
 </html>

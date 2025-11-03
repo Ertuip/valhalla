@@ -90,7 +90,7 @@
     color: #a3a3a3;
     position: relative;
     top: -46px;
-    left: 350px;
+    left: 480px;
     font-size: 17px;
  }
  
@@ -218,6 +218,10 @@ body.mixed-theme {
 
 body.mixed-theme .right-side > .themes > menu > .icons {
   background-color: #ffffff;
+  color: white;
+}
+
+body.mixed-theme select:hover {
   color: white;
 }
 
